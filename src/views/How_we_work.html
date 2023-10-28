@@ -23,6 +23,8 @@
             colors: {
               'figma-green': "#16FCD2",
               'figma-purple': "#6016FC",
+              'figma-White': "#FFFFFF",
+              'figma-Black': "#000000",
             },
           },
         },
@@ -35,10 +37,34 @@
         }
       }
     </style>
-     <link rel="icon" href="./../assets/images/logo-icons.svg" type="image/svg+xml">
-     <title>Colosal</title>
+    <link rel="icon" href="./../assets/images/logo-icons.svg" type="image/svg+xml">
+    <title>Colosal</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">ini laman "how we work"</h1>
+  <body class="bg-bg-frame">
+    <section class="leading-page bg-no-repeat bg-cover w-screen h-screen backdrop-blur-2xl">
+      <div class="w-full  h-[100px] flex justify-center items-center">
+        <nav class="flex justify-between items-center w-[1000px] h-[22px]">
+          <div class="flex items-center gap-4">
+            <img src="../assets/images/logo-icons.svg" alt="">
+            <h1 class="text-white font-bold text-2xl">Collosal.</h1>
+          </div>
+          <ul class="flex gap-[50px]">
+            <li><a href="" class="font-normal text-sm text-figma-White/80">Services</a></li>
+            <li><a href="" class="font-bold text-base text-figma-White">How We Work</a></li>
+            <li><a href="" class="font-normal text-sm text-figma-White/80">Projects</a></li>
+            <li><a href="" class="font-normal text-sm text-figma-White/80">About</a></li>
+          </ul>
+          <button class="text-figma-White px-[30px] py-[10px] bg-figma-White/5 text-sm font-medium rounded-md">Contact</button>
+        </nav>
+      </div>
+      <div class="w-full  h-[500px] flex  flex-col justify-center items-center text-center relative">
+        <p class="text-figma-green font-semibold text-base">HOW WE WORK</p>
+        <div class="w-[507px] h-[162px]">
+          <p class="text-figma-White text-4xl font-bold">We have a workflow that allows the job to be delivered well</p>
+        </div>
+        <div class="bg-figma-White/10 w-[1022px] h-[2px] absolute bottom-20"></div>
+      </div>
+      <div></div>
+    </section>
   </body>
 </html>
