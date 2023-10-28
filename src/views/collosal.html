@@ -21,8 +21,12 @@
               Noto: "Noto Sans",
             },
             colors: {
-              'figma-green': "#16FCD2",
-              'figma-purple': "#6016FC",
+              "figma-green": "#16FCD2",
+              "figma-purple": "#6016FC",
+              "figma-purple-hilight": "#221048",
+              "figma-purple-hilight-content": "#3F2379",
+              "figma-blue-hilight-content": "#233679",
+              "figma-pink-hilight-content": "#792366",
             },
           },
         },
@@ -35,28 +39,51 @@
         }
       }
     </style>
-     <link rel="icon" href="./../assets/images/logo-icons.svg" type="image/svg+xml">
-     <title>Colosal</title>
+    <link
+      rel="icon"
+      href="./../assets/images/logo-icons.svg"
+      type="image/svg+xml"
+    />
+    <title>Colosal</title>
   </head>
   <body
-    class="bg-bg-frame backdrop-blur-2xl w-full h-max bg-cover font-Noto px-52 transition-all duration-300 scroll-smooth"
+    class="bg-bg-frame bg-cover backdrop-blur-2xl font-Noto flex flex-col items-center transition-all duration-300 scroll-smooth"
   >
-  <nav class="flex items-center justify-between w-full h-max sticky py-5">
-    <img src="./../assets/images/logo.svg" alt="">
-    <div class="flex items-center gap-10">
-      <a href="" class="text-base font-normal text-white/80 hover:text-white transition-all duration-300">Services</a>
-      <a href="" class="text-base font-normal text-white/80 hover:text-white transition-all duration-300">How we Work</a>
-      <a href="" class="text-base font-normal text-white/80 hover:text-white transition-all duration-300">Projects</a>
-      <a href="" class="text-base font-normal text-white/80 hover:text-white transition-all duration-300">about</a>
-    </div>
-    <button class="rounded-sm p-3 px-8 bg-white/5 text-white">Contact</button>
-  </nav>
+  <div class="max-w-4xl h-max relative">
 
+  
+    <nav class="flex items-center justify-between w-full h-max sticky py-5">
+      <img src="./../assets/images/logo.svg" alt="" />
+      <div class="flex items-center gap-10">
+        <a
+          href=""
+          class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+          >Services</a
+        >
+        <a
+          href=""
+          class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+          >How we Work</a
+        >
+        <a
+          href=""
+          class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+          >Projects</a
+        >
+        <a
+          href=""
+          class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+          >about</a
+        >
+      </div>
+      <button class="rounded-sm p-3 px-8 bg-white/5 text-white">Contact</button>
+    </nav>
 
+    <!-- SECTION 1 -->
     <section
-      class="flex flex-col gap-32 items-center justify-center h-full w-full p-5 pt-32"
+      class="flex flex-col gap-32 items-center justify-center h-full w-full p-5"
     >
-      <div class="w-4/6 text-center flex flex-col gap-8">
+      <div class="w-4/6 text-center flex flex-col gap-8 py-32">
         <p class="font-semibold text-base text-figma-green tracking-normal">
           CLIENT-DEVELOPMENT DRIVEN
         </p>
@@ -71,38 +98,338 @@
           reduce the quality of our work.
         </p>
         <div class="flex gap-3 w-full items-center justify-center">
-          <button class="rounded-sm py-4 px-14 bg-figma-purple text-white text-base">Send Quote</button>
-          <button class="rounded-sm py-4 px-14 bg-white/5 text-white text-base">Learn More</button>
+          <button
+            class="rounded-sm py-4 px-14 bg-figma-purple text-white text-base"
+          >
+            Send Quote
+          </button>
+          <button class="rounded-sm py-4 px-14 bg-white/5 text-white text-base">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="pb-32 flex flex-col gap-20">
+        <div class="flex items-center justify-between gap-8 w-full">
+          <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
+            <img
+              src="./../assets/images/figma.svg"
+              alt="design"
+              class="h-10 w-10"
+            />
+            <h1 class="text-white text-lg font-bold">Design</h1>
+            <p class="text-white/60 text-base font-medium">
+              The project interface will be designed first, our favorite tool is
+              Figma.
+            </p>
+          </div>
+          <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
+            <img
+              src="./../assets/images/code.svg"
+              alt="develop"
+              class="h-10 w-10"
+            />
+            <h1 class="text-white text-lg font-bold">Develop</h1>
+            <p class="text-white/60 text-base font-medium">
+              The project interface will be designed first, our favorite tool is
+              Figma.
+            </p>
+          </div>
+          <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
+            <img
+              src="./../assets/images/kotak.svg"
+              alt="ship"
+              class="h-10 w-10"
+            />
+            <h1 class="text-white text-lg font-bold">Ship</h1>
+            <p class="text-white/60 text-base font-medium">
+              The project interface will be designed first, our favorite tool is
+              Figma.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-center gap-8 border-y-2 border-white/10 p-5 w-full"
+        >
+          <img src="./../assets/images/github.svg" alt="" />
+          <img src="./../assets/images/forbes.svg" alt="" />
+          <img src="./../assets/images/google.svg" alt="" />
+          <img src="./../assets/images/microsoft.svg" alt="" />
+          <img src="./../assets/images/pesbuk.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 1 END -->
+
+    <!-- SECTION 2 -->
+    <section class="flex flex-col gap-20 p-5 border-b-2 border-white/5">
+      <div class="flex gap-5 py-32">
+        <img
+          src="./../assets/images/image-1-section-2.svg"
+          alt=""
+          class="w-2/4"
+        />
+        <div class="flex flex-col gap-4 w-full">
+          <h1 class="font-semibold text-base text-figma-green tracking-normal">
+            HOW WE WORK?
+          </h1>
+          <p
+            class="text-3xl font-bold text-white text-left leading-10 antialiased"
+          >
+            Everything is well planned, well designed and developed
+            wholeheartedly
+          </p>
+          <p class="font-medium text-base text-white/60">
+            Careful planning makes us confident, developed with best practices
+            so that the project can be maintained. We always test projects
+            before they are shipped.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-5 pb-32">
+        <div class="flex flex-col gap-7 w-2/4">
+          <h1 class="font-semibold text-base text-figma-green tracking-normal">
+            OUR TEAM
+          </h1>
+          <p
+            class="text-3xl font-bold text-white text-left leading-10 antialiased"
+          >
+            We're a team of designers, engineers and analysts
+          </p>
+          <p class="font-medium text-base text-white/60">
+            Our team consists of many creative people. We are committed to
+            maintaining quality work as well as speed. These creative people
+            work together to create maximum work results.
+          </p>
+          <button
+            class="rounded-sm py-4 px-12 w-max bg-white/5 text-white text-base"
+          >
+            See Our Teams
+          </button>
+        </div>
+        <img
+          src="./../assets/images/image-2-section-2.svg"
+          alt=""
+          class="w-2/4"
+        />
+      </div>
+    </section>
+    <!-- SECTION 2 END -->
+
+    <!-- SECTION 3 -->
+    <section
+      class="flex flex-col gap-10 py-32 p-5 bg-green"
+    >
+      <img
+        src="./../assets/images/commit-logo.svg"
+        alt=""
+        class="w-80 h-80 absolute -left-36 -z-10"
+      />
+
+      <div class="flex flex-col items-center gap-3 w-full">
+        <h1
+          class="font-semibold text-base text-figma-green tracking-normal text-center"
+        >
+          PROJECTS
+        </h1>
+        <p
+          class="text-3xl font-bold text-white leading-10 antialiased text-center w-2/4"
+        >
+          We have completed many amazing projects that you will not believe
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-5 w-1/2">
+          <div class="flex flex-col gap-2 items-center">
+            <img
+              src="./../assets/images/mobile-app.svg"
+              alt=""
+              class="w-full"
+            />
+            <h1 class="text-white text-sm">The Mobile App Landing Page</h1>
+            <p class="font-normal text-base text-white/60">
+              A landing page for mobile app
+            </p>
+          </div>
+          <button
+            class="border-2 border-white bg-transparent px-8 py-3 rounded-full text-sm text-white"
+          >
+            Detail
+          </button>
+        </div>
+        <div class="flex flex-col items-center gap-5 w-1/2">
+          <div class="flex flex-col gap-2 items-center">
+            <img
+              src="./../assets/images/desktop-app.svg"
+              alt=""
+              class="w-full"
+            />
+            <h1 class="text-white text-sm">The Desktop App Landing Page</h1>
+            <p class="font-normal text-base text-white/60">
+              A landing page for desktop app
+            </p>
+          </div>
+          <button
+            class="border-2 border-white bg-transparent px-8 py-3 rounded-full text-sm text-white"
+          >
+            Detail
+          </button>
         </div>
       </div>
     
-      <div class="flex items-center justify-between gap-8 w-full">
-        <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
-          <img src="./../assets/images/figma.svg" alt="design" class="h-10 w-10">
-          <h1 class="text-white text-lg font-bold">Design</h1>
-          <p class="text-white/60 text-base font-medium">The project interface will be designed first, our favorite tool is Figma.</p>
-        </div>
-        <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
-          <img src="./../assets/images/code.svg" alt="develop" class="h-10 w-10">
-          <h1 class="text-white text-lg font-bold">Develop</h1>
-          <p class="text-white/60 text-base font-medium">The project interface will be designed first, our favorite tool is Figma.</p>
-        </div>
-        <div class="bg-white/5 flex flex-col gap-5 p-8 w-1/3 rounded-sm">
-          <img src="./../assets/images/kotak.svg" alt="ship" class="h-10 w-10">
-          <h1 class="text-white text-lg font-bold">Ship</h1>
-          <p class="text-white/60 text-base font-medium">The project interface will be designed first, our favorite tool is Figma.</p>
-        </div>
-      </div>
-      
-      <div class="flex items-center justify-center gap-8 border-y-2 border-white/10 p-5 w-full">
-        <img src="./../assets/images/github.svg" alt="">
-        <img src="./../assets/images/forbes.svg" alt="">
-        <img src="./../assets/images/google.svg" alt="">
-        <img src="./../assets/images/microsoft.svg" alt="">
-        <img src="./../assets/images/pesbuk.svg" alt="">
-      </div>
     </section>
+    <!-- SECTION 3 END -->
+    
+   
+  </div>
 
+   <!-- SECTION 4 -->
+  <section class=" bg-figma-purple-hilight relative w-11/12 rounded-xl p-32 flex flex-col items-center gap-16">
+    <div class="flex flex-col gap-2 items-center w-full">
+      <h1 class="font-semibold text-base text-figma-green tracking-normal">GET STARTED</h1>
+      <p class="text-3xl font-bold text-white leading-10 antialiased w-1/2 text-center">What do you need? Choose a service that can help you</p>
+    </div>
+    <div class="flex gap-8 w-full">
 
+      <div class="bg-figma-purple-hilight-content flex flex-col p-8  gap-10 items-center rounded-lg w-1/3">
+        <div class="flex w-full justify-between">
+          <p class="font-normal text-base text-white">UI Design</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-normal text-white/60">Starting from</p>
+            <h1 class="font-bold text-white text-4xl">1200$</h1>
+          </div>
+        </div>
+        <hr class="">
+        <div class="flex flex-col gap-2 items-center">
+          <p class="font-normal text-base text-white">10 design pages</p>
+          <p class="font-normal text-base text-white"> Well-documented</p>
+          <p class="font-normal text-base text-white"> 4 revisions </p>
+          <p class="font-normal text-base text-white"> $100/additional page</p>
+        </div>
+        <button class="bg-white w-full py-4 rounded-sm text-figma-purple-hilight-content">Detail</button>
+      </div>
+
+      <div class="bg-figma-blue-hilight-content flex flex-col p-8  gap-10 items-center rounded-lg w-1/3">
+        <div class="flex w-full justify-between">
+          <p class="font-normal text-base text-white">Development</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-normal text-white/60">Starting from</p>
+            <h1 class="font-bold text-white text-4xl">5000$</h1>
+          </div>
+        </div>
+        <hr class="">
+        <div class="flex flex-col gap-2 items-center">
+          <p class="font-normal text-base text-white">  Web & Mobile</p>
+          <p class="font-normal text-base text-white"> Well-documented</p>
+          <p class="font-normal text-base text-white">8 revisions</p>
+          <p class="font-normal text-base text-white"> $1000/additional feature</p>
+        </div>
+        <button class="bg-white w-full py-4 rounded-sm text-figma-blue-hilight-content">Detail</button>
+      </div>
+
+      <div class="bg-figma-pink-hilight-content flex flex-col p-8  gap-10 items-center rounded-lg w-1/3">
+        <div class="flex w-full justify-between">
+          <p class="font-normal text-base text-white">Maintenance</p>
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-normal text-white/60">Starting from</p>
+            <h1 class="font-bold text-white text-4xl">3000$</h1>
+          </div>
+        </div>
+        <hr class="">
+        <div class="flex flex-col gap-2 items-center">
+          <p class="font-normal text-base text-white">Daily backup</p>
+          <p class="font-normal text-base text-white">3 hourse of maintenance</p>
+          <p class="font-normal text-base text-white">Including fixing</p>
+          <p class="font-normal text-base text-white">$50/additional hour</p>
+        </div>
+        <button class="bg-white w-full py-4 rounded-sm text-figma-pink-hilight-content">Detail</button>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION 4 END -->
+
+  <section class="flex flex-col items-center gap-16 py-32 w-11/12">
+    <div class="flex flex-col gap-2 items-center w-full">
+      <h1 class="font-semibold text-base text-figma-green tracking-normal">TESTIMONIAL</h1>
+      <p class="text-3xl font-bold text-white leading-10 antialiased w-2/5 text-center">What do our clients say that we never let down?</p>
+    </div>
+    <div class="flex gap-8 w-full relative h-full">
+    
+      <div class="flex flex-col items-center p-10 gap-8 bg-white/5 rounded-md h-max mt-16 w-1/3">
+        <div class="flex flex-col items-center gap-5">
+          <img src="./../assets/images/profile-2.svg" alt="">
+          <h1 class="font-bold text-lg text-white">negro</h1>
+          <p class="font-medium text-sm text-white/60">orang item</p>
+        </div>
+        <p class="font-medium text-base text-center text-white">"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."</p>
+      </div>
+
+      <div class="flex flex-col items-center p-10 gap-8 bg-white/5 mb-10 rounded-md h-max w-1/3">
+        <div class="flex flex-col items-center gap-5">
+          <img src="./../assets/images/profile-2.svg" alt="">
+          <h1 class="font-bold text-lg text-white">Esther Howard</h1>
+          <p class="font-medium text-sm text-white/60">Abstergo Ltd.</p>
+        </div>
+        <p class="font-medium text-base text-center text-white">"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."</p>
+      </div>
+
+      <div class="flex flex-col items-center p-10 gap-8 bg-white/5 rounded-md h-max mt-16 w-1/3">
+        <div class="flex flex-col items-center gap-5">
+          <img src="./../assets/images/profile-2.svg" alt="">
+          <h1 class="font-bold text-lg text-white">negro</h1>
+          <p class="font-medium text-sm text-white/60">orang item</p>
+        </div>
+        <p class="font-medium text-base text-center text-white">"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."</p>
+      </div>
+
+    </div>
+    <div class=" flex gap-2">
+      <div class="rounded-full p-1 bg-white"></div>
+      <div class="rounded-full p-1 bg-white/5"></div>
+      <div class="rounded-full p-1 bg-white/5"></div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl flex justify-between items-center h-max relative border-y-2 py-10 border-white/5">
+    <h1 class="text-3xl font-bold text-white text-left leading-10 antialiased w-2/3" >We've prepared everything, it's time for you to tell the problem</h1>
+    <div class="flex gap-3">
+      <button class="bg-figma-purple text-white font-semibold text-base py-3 px-6 rounded-sm">Send Quote</button>
+      <button class="bg-white/5 text-white font-semibold text-base py-3 px-6 rounded-sm">Ask Us</button>
+    </div>
+  </section>
+  <footer class="max-w-4xl flex justify-evenly py-32 w-full gap-8">
+    <div class="w-1/4 flex flex-col gap-3 h-full">
+      <img src="./../assets/images/logo- footer.svg" alt="" class="w-32">
+      <p class="text-left text-sm font-medium text-white/60">Copyright © 2021</p>
+      <p class="text-left text-sm font-medium text-white/60">Design By Collosal LLC</p>
+    </div>
+    <div class="w-1/4 flex flex-col gap-3 h-full">
+     <h1 class="text-sm font-medium text-white">SERVICES</h1>
+      <p class="text-left text-sm font-medium text-white/60">Web Development</p>
+      <p class="text-left text-sm font-medium text-white/60">App Development</p>
+      <p class="text-left text-sm font-medium text-white/60">UI Design</p>
+      <p class="text-left text-sm font-medium text-white/60">Consultation</p>
+      <p class="text-left text-sm font-medium text-white/60">Maintenance</p>
+    </div>
+    <div class="w-1/4 flex flex-col gap-3 h-full">
+     <h1 class="text-sm font-medium text-white">COMPANY</h1>
+      <p class="text-left text-sm font-medium text-white/60">About</p>
+      <p class="text-left text-sm font-medium text-white/60">Contact</p>
+      <p class="text-left text-sm font-medium text-white/60">Send Quote</p>
+      <p class="text-left text-sm font-medium text-white/60">Privacy Policy</p>
+      <p class="text-left text-sm font-medium text-white/60">Term of Service</p>
+      <p class="text-left text-sm font-medium text-white/60">Jobs</p>
+    </div>
+    <div class="w-1/4 flex flex-col gap-3 h-full">
+     <h1 class="text-sm font-medium text-white">RESOURCES</h1>
+      <p class="text-left text-sm font-medium text-white/60">Support</p>
+      <p class="text-left text-sm font-medium text-white/60">Documentation</p>
+      <p class="text-left text-sm font-medium text-white/60">License</p>
+      <p class="text-left text-sm font-medium text-white/60">Sitemap</p>
+    </div>
+
+  </footer>
   </body>
 </html>
+ 
